@@ -1,3 +1,5 @@
+#include <string>
+
 #include "Process.h"
 #include "ProcessList.h"
 
