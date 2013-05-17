@@ -19,6 +19,11 @@ if (WIN32)
   set (PLATFORM_SOURCE_FILES
     src/win/ProcessListImpl.cpp
   )
+elseif (APPLE)
+  set (PLATFORM_SOURCE_FILES
+    src/osx/ProcessListImpl.cpp
+  )
+
 elseif (UNIX)
   set (PLATFORM_SOURCE_FILES
       src/linux/ProcessListImpl.cpp
